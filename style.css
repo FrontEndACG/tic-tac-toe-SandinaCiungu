@@ -1,0 +1,63 @@
+.board {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #333;
+	background-color: lightslategrey;
+	width: 300px;
+	height: 300px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.cell {
+	border: 2px solid #333;
+	width: 96px;
+	height: 96px;
+	margin: 2px;
+	font-size: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: #ccc;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+	background-color: #444;
+}
+
+.cell:first-child {
+	border-left: none;
+	margin-left: 0;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6) {
+	border-right: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+	border-top: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+	border-bottom: none;
+}
+
+.player1 {
+	color: #ff6b6b;
+}
+
+.player2 {
+	color: #48dbfb;
+}
