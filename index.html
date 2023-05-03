@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tic tac toe</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="board">
-			<div class="row">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-			</div>
-			<div class="row">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-			</div>
-			<div class="row">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-			</div>
-		</div>
-		<script src="app.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="status">
+      Jucator 1 joaca cu <span class="player1">ROSU</span>. Jucator 2 joaca cu
+      <span class="player2">ALBASTRU</span>.
+      <div id="castigator">Rezultat joc:</div>
+      <div class="scor">
+        Scor
+        <span class="player1" id="j1">0</span>
+        <span class="player2" id="j2">0</span>
+      </div>
+      <button type="submit" id="restart">Restart</button>
+    </div>
+    <div class="board">
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
